@@ -11,9 +11,9 @@ int main()
     printf("\n --------------------------------------");
     printf("\n STACK OPERATIONS USING ARRAY");
     printf("\n\t 1.PUSH\n\t 2.POP\n\t 3.DISPLAY\n\t 4.EXIT");
+    printf("\n --------------------------------------");
     do
     {
-        printf("\n --------------------------------------");
         printf("\n Enter the Choice: ");
         scanf("%d",&choice);
         switch(choice)
@@ -79,10 +79,12 @@ void display()
 {
     if(top>=0)
     {
-        printf("\n\nThe elements in STACK ARE");
+        printf("\n --------------------------------------");
+        printf("\nThe elements in STACK ARE");
         for(i=top; i>=0; i--)
-            printf("\n%d",stack[i]);
+            printf("\n\t%d",stack[i]);
         printf("\n Press Next Choice");
+        printf("\n --------------------------------------");
     }
     else
     {
